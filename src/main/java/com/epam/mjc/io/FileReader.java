@@ -13,9 +13,9 @@ public class FileReader {
 
     public Profile getDataFromFile(File file){
         List<String> datas = new ArrayList<>();
-        String n;
-        int i=0;
         try {
+            String n;
+            int i=0;
             BufferedReader bufferedReader = new BufferedReader(new java.io.FileReader(file));
             while ((n = Objects.requireNonNull(bufferedReader).readLine()) != null) {
                 String[] split = n.split(" ");
